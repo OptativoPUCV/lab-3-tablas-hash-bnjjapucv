@@ -53,7 +53,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     while(map->buckets[pos]!= NULL)
     {
         pos = (pos+1) % map->capacity;
-        if(is_equal(map->buckets[pos], key))
+        if(is_equal(map->buckets[pos]->key, key))
         {
             return;
         }
