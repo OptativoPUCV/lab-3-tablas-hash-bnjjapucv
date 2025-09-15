@@ -45,10 +45,14 @@ void insertMap(HashMap * map, char * key, void * value) {
         return;
     }
     long pos = hash(key, map->capacity);
+
+    map->size++;
     while(map->buckets[pos]!= NULL)
     {
         pos = (pos+1) % map->capacity;
     }
+    map->buckets;
+    map->current = pos;
 
 }
 
