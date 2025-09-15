@@ -51,7 +51,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     {
         pos = (pos+1) % map->capacity;
     }
-    map->buckets;
+    map->buckets = createPair(key);
     map->current = pos;
 
 }
