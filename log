@@ -124,3 +124,17 @@ Sun, Sep 14, 2025 10:26:39 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b8fa10b
+Sun, Sep 14, 2025 10:30:03 PM: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:97:5: error: expected ',' or ';' before 'if'
+     if(pair != NULL)
+     ^~
+hashmap.c:96:11: error: unused variable 'pair' [-Werror=unused-variable]
+     Pair *pair = searchMap(map, key)
+           ^~~~
+cc1.exe: all warnings being treated as errors
+baaf459
