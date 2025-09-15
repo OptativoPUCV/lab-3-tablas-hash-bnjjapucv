@@ -63,12 +63,20 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     long capacidadAnterior = map->capacity;
-    Pair ** bucketsAnterior = map->buckets;
+    Pair ** old_buckets = map->buckets;
     
     map->buckets = (Pair **)calloc(map->capacity, sizeof(Pair *));
     map->capacity *= 2;
     map->size = 0;
     map->current = -1;
+
+    for(long i = 0 ; i > capacidadAnterior ; i++)
+    {
+        if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
+        {
+            insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+        }
+    }
 }
 
 

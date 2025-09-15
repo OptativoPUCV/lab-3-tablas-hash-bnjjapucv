@@ -208,3 +208,8 @@ hashmap.c:65:10: error: unused variable 'capacidadAnterior' [-Werror=unused-vari
           ^~~~~~~~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 7abb373
+Sun, Sep 14, 2025 11:01:07 PM: 
+ hashmap.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+ tests:  0|0
+5ea3c5a
