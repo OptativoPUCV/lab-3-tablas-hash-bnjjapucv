@@ -218,3 +218,13 @@ Sun, Sep 14, 2025 11:02:34 PM:
  1 file changed, 2 insertions(+)
  tests:  0|0
 09c177b
+Sun, Sep 14, 2025 11:20:24 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:67:8: error: 'HashMap {aka struct HashMap}' has no member named 'capaticy'; did you mean 'capacity'?
+     map->capaticy += 2;
+        ^~
+2408ad6
