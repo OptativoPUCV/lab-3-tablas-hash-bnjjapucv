@@ -98,3 +98,14 @@ Sun, Sep 14, 2025 10:09:22 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9f39cfc
+Sun, Sep 14, 2025 10:24:52 PM: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:108:23: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+             return map->buckets;
+                    ~~~^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+c654e07
