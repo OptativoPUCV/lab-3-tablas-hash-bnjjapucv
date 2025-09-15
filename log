@@ -109,3 +109,8 @@ hashmap.c:108:23: error: return from incompatible pointer type [-Werror=incompat
                     ~~~^~~~~~~~~
 cc1.exe: all warnings being treated as errors
 c654e07
+Sun, Sep 14, 2025 10:25:17 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b8eb52d
