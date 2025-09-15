@@ -236,3 +236,8 @@ hashmap.c:67:8: error: 'HashMap {aka struct HashMap}' has no member named 'capat
      map->capaticy += 2;
         ^~
 014e672
+Sun, Sep 14, 2025 11:21:02 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6955205
