@@ -70,7 +70,7 @@ void enlarge(HashMap * map) {
     map->size = 0;
     map->current = -1;
 
-    for(long i = 0 ; i > capacidadAnterior ; i++)
+    for(long i = 0 ; i < capacidadAnterior ; i++)
     {
         if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
         {
