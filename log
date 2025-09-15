@@ -228,3 +228,11 @@ hashmap.c:67:8: error: 'HashMap {aka struct HashMap}' has no member named 'capat
      map->capaticy += 2;
         ^~
 2408ad6
+Sun, Sep 14, 2025 11:20:36 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:67:8: error: 'HashMap {aka struct HashMap}' has no member named 'capaticy'; did you mean 'capacity'?
+     map->capaticy += 2;
+        ^~
+014e672
