@@ -154,3 +154,14 @@ Sun, Sep 14, 2025 10:34:47 PM:
  tests:  11|2
 total_score: 50/70
 23fa5e3
+Sun, Sep 14, 2025 10:39:06 PM: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:129:25: error: 'pos' undeclared (first use in this function)
+         if(map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+                         ^~~
+hashmap.c:129:25: note: each undeclared identifier is reported only once for each function it appears in
+7b74287
